@@ -10,17 +10,17 @@ class Program
 
         // Input: Number of times Zanempilo travels to his hometown in a year
         Console.Write("Enter the number of times Zanempilo travels to his hometown in a year: ");
-        int h = int.Parse(Console.ReadLine());
+        int a = int.Parse(Console.ReadLine());
 
         // Input: Whether it's a leap year or not
-        Console.Write("Is it a leap year? (Enter 'yes' or 'no'): ");
+        Console.Write("Is it a leap year? (Enter 'y' or 'n'): ");
         string leapYearInput = Console.ReadLine().ToLower();
         bool isLeapYear = leapYearInput == "yes";
 
         // Calculate cricket playing days
-        int normalWeekends = totalWeekends - h; // weekends when Zanempilo is in Durban
+        int normalWeekends = totalWeekends - a; // weekends when Zanempilo is in Durban
         double normalCricketDays = normalWeekends * (3.0 / 4.0); // 3/4 of the weekends in Durban
-        double holidayCricketDays = (2.0 / 3.0) * h; // two-thirds of the holiday when not in Durban
+        double holidayCricketDays = (2.0 / 3.0) * a; // two-thirds of the holiday when not in Durban
 
         // Total cricket playing days
         double totalCricketDays;
